@@ -79,7 +79,7 @@ void WiFiNetwork::setUp() {
     #if ESP8266
     WiFi.setPhyMode(WIFI_PHY_MODE_11N);
     #endif
-    WiFi.hostname("SlimeVR FBT Tracker");
+    WiFi.hostname("SVR FBT");
     wifiHandlerLogger.info("Loaded credentials for SSID %s and pass length %d", WiFi.SSID().c_str(), WiFi.psk().length());
     setStaticIPIfDefined();
     wl_status_t status = WiFi.begin(); // Should connect to last used access point, see https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/station-class.html#begin
